@@ -13,4 +13,3 @@ composer require flarex/flarex
 ```bash
 php artisan flarex:generate ModelName
 ``` 
-
