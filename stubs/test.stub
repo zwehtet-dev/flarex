@@ -1,0 +1,15 @@
+<?php
+
+namespace Tests\Feature;
+
+use Tests\TestCase;
+use App\Models\{{ class }};
+
+class {{ class }}Test extends TestCase
+{
+    public function test_can_create_{{ snake_class }}()
+    {
+        $model = {{ class }}::create(['name' => 'Test']);
+        $this->assertNotNull($model);
+    }
+}

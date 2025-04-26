@@ -1,0 +1,43 @@
+# Laravel-specific ignores
+/vendor/
+node_modules/
+public/storage
+public/hot
+public/css/
+public/js/
+storage/*.key
+.env
+.env.backup
+.env.*.backup
+Homestead.json
+Homestead.yaml
+npm-debug.log
+yarn-error.log
+.phpunit.result.cache
+
+# Package-specific ignores
+composer.lock  # Optional: Exclude if you don't want to track dependency versions
+tests/storage/
+tests/Browser/console/
+tests/Browser/screenshots/
+tests/Browser/source/
+
+# General ignores
+*.log
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*.bak
+*.tmp
+*.temp
+
+# IDE-specific ignores
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# FlareX-specific ignores
+/stubs/*.generated  # If you generate temporary stub files
+/config/flarex.php  # Published config file in a Laravel project
