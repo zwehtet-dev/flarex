@@ -1,0 +1,24 @@
+<?php
+
+  namespace {{ namespace }};
+
+  use App\Models\{{ model }};
+  use Illuminate\Http\Request;
+  use Illuminate\Http\Response;
+
+  class {{ class }} extends Controller
+  {
+      public function store(Request $request)
+      {
+          try {
+              $request->validate([
+                  'name' => 'required|string|max:255',
+              ]);
+
+              $model = {{ model }}::create($request->all());
+              return response()->json($model, Response::HTTP_CREATED);
+          } catch (\Exception $e) {
+              return response()->json(['error' => $e->getMessage()], Response::HTTP_INTERNAL_SERVER_ERROR);
+          }
+      }
+  }

@@ -14,7 +14,10 @@ class FlareXServiceProvider extends ServiceProvider {
             $this->commands( [
                 \FlareX\Console\Commands\Generate::class,
                 \FlareX\Console\Commands\MakeModel::class,
-                // Add other commands here
+                \FlareX\Console\Commands\MakeController::class,
+                \FlareX\Console\Commands\MakeApi::class,
+                \FlareX\Console\Commands\MakeResource::class,
+                \FlareX\Console\Commands\MakeModule::class,
             ] );
         }
 
