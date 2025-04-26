@@ -3,6 +3,7 @@
     "description": "A blazing fast Laravel code generator. FlareX helps you quickly scaffold models, controllers, migrations, and more - built to ignite your Laravel development.",
     "type": "library",
     "license": "MIT",
+    "version": "1.0.0",
     "autoload": {
         "psr-4": {
             "Flarex\\Flarex\\": "src/"
@@ -14,6 +15,7 @@
         }
     ],
     "minimum-stability": "dev",
+    "prefer-stable": true,
     "require": {
         "laravel/framework": "^11.0"
     }
